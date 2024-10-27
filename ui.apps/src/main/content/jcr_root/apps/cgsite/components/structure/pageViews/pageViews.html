@@ -1,0 +1,18 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='cgsite.pageviews'}"/>
+</sly>
+<div  id="testqq">  ${currentPage['path']}</div>
+<h5> <b> ${currentNode.path}</b></h5>
+
+<div id="responseDiv"> </div>
+
+
+<button type="submit" onclick="loadImage()">test</button>
+
+
+<style>
+.pageViews{
+    display : none;
+}
+</style>
+
